@@ -50,6 +50,10 @@
                             <constraint firstItem="RKZ-pK-sXC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Wg0-g3-Ozj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mealNameLabel" destination="RKZ-pK-sXC" id="6TF-Of-L9M"/>
+                        <outlet property="nameTextField" destination="Jt0-1g-MuT" id="rQS-oN-a7J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
