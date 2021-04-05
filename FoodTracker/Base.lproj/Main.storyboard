@@ -54,7 +54,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="mealNameLabel" destination="RKZ-pK-sXC" id="6TF-Of-L9M"/>
+                        <outlet property="mealNameLabel" destination="3hd-1N-CQx" id="LKR-5n-tnH"/>
                         <outlet property="nameTextField" destination="Jt0-1g-MuT" id="rQS-oN-a7J"/>
                     </connections>
                 </viewController>
