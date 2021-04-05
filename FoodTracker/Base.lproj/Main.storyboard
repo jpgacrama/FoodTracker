@@ -43,6 +43,12 @@
                                     <constraint firstAttribute="trailing" secondItem="Jt0-1g-MuT" secondAttribute="trailing" id="rhW-Lk-7eV"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OOS-gr-FIA">
+                                <rect key="frame" x="20" y="180" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OOS-gr-FIA" secondAttribute="height" multiplier="1:1" id="Oew-ql-Hfm"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
