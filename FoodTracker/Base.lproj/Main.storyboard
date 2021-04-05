@@ -43,7 +43,7 @@
                                     <constraint firstAttribute="trailing" secondItem="Jt0-1g-MuT" secondAttribute="trailing" id="rhW-Lk-7eV"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OOS-gr-FIA">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="OOS-gr-FIA">
                                 <rect key="frame" x="20" y="180" width="320" height="320"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="OOS-gr-FIA" secondAttribute="height" multiplier="1:1" id="Oew-ql-Hfm"/>
@@ -70,6 +70,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="defaultPhoto" width="500" height="666.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
