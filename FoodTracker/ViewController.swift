@@ -56,19 +56,17 @@ class ViewController: UIViewController, UITextFieldDelegate,
     }
     
     // I made this private just to suppress warnings but it may not be called outside this class
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
+    func imagePickerController(_ picker: UIImagePickerController,
+     didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+
         // The info dictionary may contain multiple representations of the image. You want to use the original.
-        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage else {
+        guard let selectedImage = info[.originalImage] as? UIImage else {
             fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
         }
-        
         // Set photoImageView to display the selected image.
         photoImageView.image = selectedImage
         
         // Dismiss the picker.
         dismiss(animated: true, completion: nil)
     }
-    
-    
 }
