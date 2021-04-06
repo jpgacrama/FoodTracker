@@ -7,7 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate,
+                      UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     //MARK: Properties
     
     @IBOutlet weak var nameTextField: UITextField!
@@ -35,6 +36,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //MARK: Actions
     
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
+        // Hide the keyboard.
+        nameTextField.resignFirstResponder()
+        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
+        let imagePickerController = UIImagePickerController()
+        // Only allow photos to be picked, not taken.
+        imagePickerController.sourceType = .photoLibrary
     }
     
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
