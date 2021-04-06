@@ -42,6 +42,9 @@ class ViewController: UIViewController, UITextFieldDelegate,
         let imagePickerController = UIImagePickerController()
         // Only allow photos to be picked, not taken.
         imagePickerController.sourceType = .photoLibrary
+        // Make sure ViewController is notified when the user picks an image.
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
     }
     
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
