@@ -15,6 +15,7 @@
 		E082289E2619A4540007689D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E082289C2619A4540007689D /* LaunchScreen.storyboard */; };
 		E08228A92619A4540007689D /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08228A82619A4540007689D /* FoodTrackerTests.swift */; };
 		E08228B42619A4540007689D /* FoodTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08228B32619A4540007689D /* FoodTrackerUITests.swift */; };
+		E0B0D5A6261DBC0400622D19 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B0D5A5261DBC0400622D19 /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E08228AF2619A4540007689D /* FoodTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08228B32619A4540007689D /* FoodTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerUITests.swift; sourceTree = "<group>"; };
 		E08228B52619A4540007689D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0B0D5A5261DBC0400622D19 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				E082289A2619A4540007689D /* Assets.xcassets */,
 				E082289C2619A4540007689D /* LaunchScreen.storyboard */,
 				E082289F2619A4540007689D /* Info.plist */,
+				E0B0D5A5261DBC0400622D19 /* RatingControl.swift */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B0D5A6261DBC0400622D19 /* RatingControl.swift in Sources */,
 				E08228962619A4530007689D /* ViewController.swift in Sources */,
 				E08228922619A4530007689D /* AppDelegate.swift in Sources */,
 				E08228942619A4530007689D /* SceneDelegate.swift in Sources */,
