@@ -1,6 +1,11 @@
 import UIKit
 
 class RatingControl: UIStackView {
+    
+    //MARK: Properties
+    private var ratingButtons = [UIButton]()
+    var rating = 0
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupButtons()
