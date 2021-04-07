@@ -11,6 +11,10 @@ class RatingControl: UIStackView {
         setupButtons()
     }
     
+    @objc func ratingButtonTapped(button: UIButton) {
+        print("Button pressed 👍😃")
+    }
+    
     private func setupButtons() {
         // Button Properties
         let button = UIButton()
@@ -21,6 +25,9 @@ class RatingControl: UIStackView {
         button.heightAnchor.constraint(equalToConstant: 44.0).isActive = true
         button.widthAnchor.constraint(equalToConstant: 44.0).isActive = true
         
+        // Setup the button action
+        button.addTarget(self, action: #selector(ratingButtonTapped(button:)), for: .touchUpInside)
+
         // Add the button to the stack
         addArrangedSubview(button)
     }
