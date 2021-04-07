@@ -36,6 +36,9 @@ class RatingControl: UIStackView {
             
             // Add the button to the stack
             addArrangedSubview(button)
+            
+            // Add the new button to the rating button array
+            ratingButtons.append(button)
         }
     }
 }
