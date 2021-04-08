@@ -49,9 +49,6 @@
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="qyG-Rc-rV3" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="490.5" width="184" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="qyG-Rc-rV3" secondAttribute="height" multiplier="92:55" id="g9b-wT-mdT"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
