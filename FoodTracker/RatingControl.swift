@@ -4,7 +4,9 @@ import UIKit
     
     //MARK: Properties
     private var ratingButtons = [UIButton]()
-    var rating = 0
+    private var rating = 0
+    @IBInspectable private let starSize: CGSize = CGSize(width: 44.0, height: 44.0)
+    @IBInspectable private let starCount: Int = 5
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,17 +23,15 @@ import UIKit
     }
     
     private func setupButtons() {
-        let constHeightAndWidth: CGFloat = 44.0
-        
-        for _ in 0..<5 {
+        for _ in 0..<starCount {
             // Create the button
             let button = UIButton()
             button.backgroundColor = UIColor.blue
             
             // Add constraints
             button.translatesAutoresizingMaskIntoConstraints = false
-            button.heightAnchor.constraint(equalToConstant: constHeightAndWidth).isActive = true
-            button.widthAnchor.constraint(equalToConstant: constHeightAndWidth).isActive = true
+            button.heightAnchor.constraint(equalToConstant: starSize.height).isActive = true
+            button.widthAnchor.constraint(equalToConstant: starSize.width).isActive = true
             
             // Setup the button action
             button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(button:)), for: .touchUpInside)
