@@ -56,7 +56,7 @@
                     <navigationItem key="navigationItem" title="Your Meals" id="smO-el-uuR">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Y5Q-iV-pha">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="GAu-xB-yjw"/>
+                                <segue destination="BYZ-38-t0r" kind="show" id="yI1-I8-li8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -123,7 +123,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="IPE-Xz-AJl"/>
                     <connections>
-                        <outlet property="mealNameLabel" destination="3hd-1N-CQx" id="LKR-5n-tnH"/>
                         <outlet property="nameTextField" destination="Jt0-1g-MuT" id="rQS-oN-a7J"/>
                         <outlet property="photoImageView" destination="OOS-gr-FIA" id="L0Z-lM-3wL"/>
                         <outlet property="ratingControl" destination="qyG-Rc-rV3" id="1Ck-rs-PGR"/>
@@ -136,7 +135,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1037.3831775700935" y="74.514038876889856"/>
+            <point key="canvasLocation" x="1269" y="75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4e3-iI-1t8">
