@@ -4,7 +4,7 @@ import UIKit
     
     //MARK: Properties
     private var ratingButtons = [UIButton]()
-    private var rating = 0 {
+    var rating = 0 {
         didSet {
             updateButtonSelectionStates()
         }

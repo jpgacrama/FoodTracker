@@ -2,6 +2,8 @@
 //  Meal.swift
 //  FoodTracker
 //
+//  This is the MODEL in the Model View Controller Design Pattern
+//
 //  Created by Jonas Gacrama on 4/9/21.
 //
 
