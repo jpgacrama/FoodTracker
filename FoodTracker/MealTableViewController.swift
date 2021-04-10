@@ -151,4 +151,14 @@ class MealTableViewController: UITableViewController {
         }
         meals += [meal1, meal2, meal3]
     }
+    
+    private func saveMeals(){
+        do {
+            let data = try NSKeyedArchiver.archivedData(withRootObject: meals, requiringSecureCoding: false)
+            try data.write(to: Meal.ArchiveURL)
+            os_log("Meals successfully saved.", log: OSLog.default, type: .debug)
+        } catch {
+            os_log("Failed to save meals...", log: OSLog.default, type: .error)
+        }
+    }
 }
