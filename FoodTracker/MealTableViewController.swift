@@ -21,13 +21,11 @@ class MealTableViewController: UITableViewController {
         // Load any saved meals, otherwise load sample data.
         if let savedMeals = loadMeals() {
             meals += savedMeals
-        } else {
+        }
+        else {
             // Load the sample data.
             loadSampleMeals()
         }
-        
-        // Load the sample data.
-        loadSampleMeals()
     }
 
     // MARK: - Table view data source
